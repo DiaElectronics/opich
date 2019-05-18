@@ -8,4 +8,9 @@ xrandr --newmode "848x480p60"   31.50  848 872 952 1056  480 483 493 500 -hsync 
 xrandr --addmode HDMI-1 "848x480p60"
 xrandr --output HDMI-1 --mode "848x480p60"
 
+cd /home/pi
+read -p "Enter Card Code : " card_code
+echo "$card_code" >> id.txt
+chmod 777 /home/pi/run.sh
+
 echo "do not forget to hide task bar now"
