@@ -11,6 +11,6 @@ cp ./opich/run.sh ./run.sh
 chmod 777 ./run.sh
 
 cd opich
-./firmware
+./firmware.exe
 
 echo "do not forget to hide task bar now"
