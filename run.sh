@@ -4,6 +4,6 @@ xrandr --addmode HDMI-1 "848x480p60"
 xrandr --output HDMI-1 --mode "848x480p60"
 cd /home/pi/opich
 echo "LOOKING FOR UPDATES"
-./update.sh
+./update.sh &
 sleep 10
 sudo ./firmware.exe
