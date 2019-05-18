@@ -13,4 +13,5 @@ cd WiringOP
 chmod +x ./build
 sudo ./build
 
+cp run.sh /home/pi/
 echo "please reboot now"

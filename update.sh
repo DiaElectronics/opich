@@ -2,4 +2,4 @@
 
 LOGS="$(git pull|grep Updating)"
 echo "LOGS: [""$LOGS""]"
-[ -z "$LOGS" ] || sudo reboot
+[ -z "$LOGS" ] || sleep 120 && sudo reboot
