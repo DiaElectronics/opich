@@ -2,4 +2,4 @@
 
 LOGS="$(git pull|grep firmware.exe)"
 echo "LOGS: [""$LOGS""]"
-[ -z "$LOGS" ] || sudo reboot
+[ -z "$LOGS" ] || (echo "rebooting" && sleep 120 && sudo reboot)
